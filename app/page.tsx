@@ -25,15 +25,15 @@ type project = {
 export default function Home() {
 
   const aboutMe: aboutMe[] = [{
-    description: 'A web/mobile developer who has been shipping high quality software ready for users to consume on each demand',
+    description: 'A web/mobile developer who has been shipping high quality software ready for users to consume on each demand.',
     icon: <Image style={{ textAlign: "center", alignSelf: "center", justifySelf: "center" }} width={150} height={150} src={'/dev.svg'} alt="Diomedes Valllejo" />
   },
   {
-    description: 'Someone with well knowledge of top/emerging technologies who keeps up to date with the tech industrie',
+    description: 'Someone with well knowledge of top/emerging technologies who keeps up to date with the tech industrie.',
     icon: <Image style={{ textAlign: "center", alignSelf: "center", justifySelf: "center" }} width={150} height={150} src={'/tech.svg'} alt="Diomedes Valllejo" />
   },
   {
-    description: 'A person that owns your idea and understand that each project comes with a dream and a due date',
+    description: 'A person that owns your idea and understand that each project comes with a dream and a due date.',
     icon: <Image style={{ textAlign: "center", alignSelf: "center", justifySelf: "center" }} width={150} height={150} src={'/time.svg'} alt="Diomedes Valllejo" />
   }
   ]
@@ -44,19 +44,19 @@ export default function Home() {
       title: 'Milett Nourishing Nature',
       description: `An Ecommerce/Blog web application that allows users to purchase an learn more abot Milett's products and services.`,
       projectLink: 'https://milett.vercel.app/',
-      stack: [<Image style={{ textAlign: "center", alignSelf: "center", justifySelf: "center" }} width={150} height={150} src={'/dev.svg'} alt="Diomedes Valllejo" />]
+      stack: [].map((icon:string)=><Image style={{ textAlign: "center", alignSelf: "center", justifySelf: "center" }} width={150} height={150} src={icon} alt="Diomedes Valllejo" />)
     },
 
     {
       companyPhoto: '/claro.png',
       title: 'Prepaid Bounces | Claro DR',
-      description: 'A transactional web app capabble of handling more than 7M transactions per month.',
-      stack: [<Image style={{ textAlign: "center", alignSelf: "center", justifySelf: "center" }} width={150} height={150} src={'/dev.svg'} alt="Diomedes Valllejo" />]
+      description: `A transactional web app capabble of handling more than 7M transactions per month.`,
+      stack: [<Image style={{ textAlign: "center", alignSelf: "center", justifySelf: "center" }} width={30} height={30} src={'/dev.svg'} alt="Diomedes Valllejo" />]
     },
     {
       companyPhoto: '/claro.png',
       title: 'Prepaid promotions | Claro DR',
-      description: 'A web application that provide users with bonuses and promotions based on their usage and consumption services.',
+      description: 'A web application that provide users with bonuses and promotions based on their usage and consumption.',
       stack: [<Image style={{ textAlign: "center", alignSelf: "center", justifySelf: "center" }} width={150} height={150} src={'/dev.svg'} alt="Diomedes Valllejo" />]
     }, {
       companyPhoto: '/ISFODOSU.gif',
@@ -112,8 +112,8 @@ export default function Home() {
           {projects.map(({ companyPhoto, description, title, projectLink }, index) =>
             <div className={styles.cardContainer} key={index} style={{ height: "500px", width: "300px", minWidth: 300, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-start", textAlign: "center", border: "1px solid #cacaca", padding: 20, borderRadius: 30, backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
               {companyPhoto && <Image style={{ textAlign: "center", alignSelf: "center", justifySelf: "center" }} width={150} height={150} src={companyPhoto} alt="Company Logo" />}
-              <p style={{ fontSize: 20, color: "white", fontWeight: "bold", marginTop: 0, flex: 1 }}>{title}</p>
-              <p style={{ fontSize: 20, color: "#cacaca", fontWeight: "normal", flex: 1, alignSelf: "flex-end" }}>{description}</p>
+              <p style={{ fontSize: 20, color: "white", fontWeight: "bold", marginTop: 5, flex: 1 }}>{title}</p>
+              <p style={{ fontSize: 20, color: "#cacaca", fontWeight: "normal", flex: 1}}>{description}</p>
               {projectLink ? <a className={styles.button} href={projectLink}>View Project</a> : <a className={styles.button}>Private project</a>}
 
             </div>)}
