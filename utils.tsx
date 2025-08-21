@@ -46,7 +46,7 @@ export const projects: project[] = [
         companyPhoto: '/claro.png',
         title: 'Prepaid promotions | Claro DR',
         description: 'A web application that provide users with bonuses based on their consumption.',
-        stack: ['/spring.svg', '/nextjs.png', '/oracle.png', '/redhat.png', '/nexus.png', '/gitlab.png', '/jenkins.png',].map((icon: string) => <Image style={{ textAlign: "center", alignSelf: "center", justifySelf: "center" }} width={30} height={30} src={icon} alt="tech icon" />)
+        stack: ['/spring.svg', '/Nextjs.png', '/oracle.png', '/redhat.png', '/nexus.png', '/gitlab.png', '/jenkins.png',].map((icon: string) => <Image style={{ textAlign: "center", alignSelf: "center", justifySelf: "center" }} width={30} height={30} src={icon} alt="tech icon" />)
     },
     {
         companyPhoto: '/ISFODOSU.gif',

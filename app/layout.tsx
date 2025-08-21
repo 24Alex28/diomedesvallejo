@@ -3,7 +3,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 export const metadata: Metadata = {
   title: "Diomedes Vallejo",
-  description: "Developer portfolio"
+  description: "Developer portfolio",
+   verification: {
+    google: "TRXTjRqa2GafIa1gGtMWE1wg6zyMkodTDpRaMUUAGiM", 
+  },
 };
 
 const geistSans = Geist({
