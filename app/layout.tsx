@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Diomedes Vallejo",
   description: "Developer portfolio",
    verification: {
-    google: "TRXTjRqa2GafIa1gGtMWE1wg6zyMkodTDpRaMUUAGiM", 
+    google: "3qdW_tW_8VE13q0GOD0zkU2o0CNWev-JIYy4grJZHec", 
   },
 };
 
