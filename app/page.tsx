@@ -31,9 +31,8 @@ export default function Home() {
         </div>
       </div>
       
-   <div  style={{ display: "flex", flexDirection: "column", width: "100%", height:"100%", backgroundColor: "black", color: "#cacaca", flex: 1 ,}}>
-       
-       <div id="about me" className={styles.section} style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",  gap: 35, top: 0, zIndex: 1, backgroundColor: "rgba(0, 0, 0, 0.8)", padding: 10, position: "relative", height:"100vh"}} >
+   <div  style={{ display: "flex", flexDirection: "column", flexWrap:"wrap", width: "100%", backgroundColor: "black", color: "#cacaca", flex: 1 , height:"100%", gap:150}}>
+       <div id="about me" className={styles.section} style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", flex: 1, gap: 35, marginTop:150, top: 0, zIndex: 1, backgroundColor: "rgba(0, 0, 0, 0.8)", padding: 10, height:"100vh",}} >
         <Image style={{ textAlign: "center", alignSelf: "center", justifySelf: "center" }} width={60} height={60} src={'/bulb.gif'} alt="bulb light" />
         <h1 style={{ fontSize: 'clamp(30px,20vw,90px)', textAlign: "center", color: "white" }} className={font_1.className}>Something you should know  <span style={{ fontWeight: "bold" }}>about me</span> </h1>
         <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "center", justifyContent: "center", gap: 40 }}>
@@ -46,7 +45,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id='projects' className={styles.section} style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 35, top: 0, zIndex: 1, backgroundColor: "rgba(0, 0, 0, 0.8)", padding: 10, position: "inherit", height:"100vh" }} >
+      <div id='projects' className={styles.section} style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", flex: 1, gap: 35, top: 0, zIndex: 1, backgroundColor: "rgba(0, 0, 0, 0.8)", padding: 10, position: "inherit", height:"100vh" }} >
         <Image style={{ textAlign: "center", alignSelf: "center", justifySelf: "center" }} width={60} height={60} src={'/bulb.gif'} alt="bulb light" />
         <h1 style={{ fontSize: 'clamp(30px,20vw,90px)', textAlign: "center", color: "white" }} className={font_1.className}><span style={{ fontWeight: "bold" }}>Once</span> ideas, <span style={{ fontWeight: "bold" }}>Now</span>  real projects</h1>
         <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "center", justifyContent: "center", gap: 40 }}>
@@ -67,7 +66,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="frameworks and tools" className={styles.section} style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 35, top: 0, zIndex: 1, backgroundColor: "rgba(0, 0, 0, 0.8)", padding: 10, position: "inherit", height:"100vh"}} >
+      <div id="frameworks and tools" className={styles.section} style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", flex: 1, gap: 35, top: 0, zIndex: 1, backgroundColor: "rgba(0, 0, 0, 0.8)", padding: 10, position: "inherit", height:"100vh"}} >
         <Image style={{ textAlign: "center", alignSelf: "center", justifySelf: "center" }} width={60} height={60} src={'/bulb.gif'} alt="bulb light" />
         <h1 style={{ fontSize: 'clamp(30px,20vw,90px)', textAlign: "center", color: "white" }} className={font_1.className}><span style={{ fontWeight: "bold" }}>Right</span> tools, <span style={{ fontWeight: "bold" }}>Faster </span>deployment</h1>
         <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "center", justifyContent: "center", gap: 40 }}>
@@ -87,7 +86,7 @@ export default function Home() {
       </div>
 
 
-      <div id="contact me" className={styles.section} style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 35, top: 0, zIndex: 1, backgroundColor: "rgba(0, 0, 0, 0.8)", padding: 10, position: "inherit", height:"100vh"}} >
+      <div id="contact me" className={styles.section} style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", flex: 1, marginBottom:"clamp(1px , 20vw, 180px)", gap: 35, top: 0, zIndex: 1, backgroundColor: "rgba(0, 0, 0, 0.8)", padding: 10, position: "inherit", height:"100vh"}} >
         <Image style={{ textAlign: "center", alignSelf: "center", justifySelf: "center" }} width={60} height={60} src={'/bulb.gif'} alt="bulb light" />
         <h1 style={{ fontSize: 'clamp(30px,20vw,90px)', textAlign: "center", color: "white" }} className={font_1.className}>Still thinking about it? <span style={{ fontWeight: "bold" }}>let&apos;s talk</span></h1>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 40 }}>
