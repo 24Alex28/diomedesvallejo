@@ -84,7 +84,7 @@ export const stack: project[] = [
         companyPhoto: '/database.svg',
         title: 'Database management',
         description: 'A well managed database is the key to a successful and fast application.',
-        stack: ['/oracle.png', '/Postgre.png', '/firebase.png', '/neon.png'].map((icon: string) => <Image style={{ textAlign: "center", alignSelf: "center", justifySelf: "center" }} width={30} height={30} src={icon} alt="tech icon" />)
+        stack: ['/oracle.png', '/Postgre.png', '/firebase.png', '/Neon.png'].map((icon: string) => <Image style={{ textAlign: "center", alignSelf: "center", justifySelf: "center" }} width={30} height={30} src={icon} alt="tech icon" />)
     },
     {
         companyPhoto: '/deployment.svg',
