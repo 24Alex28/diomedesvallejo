@@ -30,7 +30,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.section} style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", flex: 1, gap: 35, top: 0, zIndex: 1, backgroundColor: "rgba(0, 0, 0, 0.8)", padding: 10, position: "inherit" }} >
+      
+   <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: "100%", backgroundColor: "black", color: "#cacaca", flex: 1 }}>
+       <div className={styles.section} style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", flex: 1, gap: 35, top: 0, zIndex: 1, backgroundColor: "rgba(0, 0, 0, 0.8)", padding: 10, position: "inherit" }} >
         <Image style={{ textAlign: "center", alignSelf: "center", justifySelf: "center" }} width={60} height={60} src={'/bulb.gif'} alt="bulb light" />
         <h1 style={{ fontSize: 'clamp(30px,20vw,90px)', textAlign: "center", color: "white" }} className={font_1.className}>Something you should know  <span style={{ fontWeight: "bold" }}>about me</span> </h1>
         <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "center", justifyContent: "center", gap: 40 }}>
@@ -97,6 +99,7 @@ export default function Home() {
           <Link href={"https://mail.google.com/mail/?view=cm&fs=1&to=01davp@gmail.com&su=Hello&body=I%20want%20to%20connect!"}><MailFilled style={{ fontSize: 40 }} /></Link>
         </div>
       </div>
+   </div>
     </div>
   );
 }
