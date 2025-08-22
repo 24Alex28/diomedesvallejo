@@ -158,7 +158,7 @@ top:0
   opacity: 1;
   transform: translateY(0);
 }
-/* Enable hover only on non-touch devices */
+
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background: var(--button-primary-hover);
