@@ -147,7 +147,17 @@ top:0
 .cardContainer:hover {
   margin-top:-20
 }
+.reveal {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform 1s ease-out, opacity 1s ease-out;
+  will-change: transform, opacity;
+}
 
+.inView {
+  opacity: 1;
+  transform: translateY(0);
+}
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
