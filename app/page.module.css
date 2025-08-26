@@ -27,9 +27,9 @@
   }
 }
 
-  .section {
-    height: 100vh  ;
-  }
+.section {
+  height: 100vh;
+}
 
 .main {
   display: flex;
@@ -140,13 +140,14 @@ a.secondary {
   border: 1px solid #cacaca;
 }
 
-.cardContainer{
-top:0
+.cardContainer {
+  top: 0
 }
 
 .cardContainer:hover {
-  margin-top:-20
+  margin-top: -20
 }
+
 .reveal {
   opacity: 0;
   transform: translateY(100px);
@@ -157,6 +158,25 @@ top:0
 .inView {
   opacity: 1;
   transform: translateY(0);
+}
+
+.textTag {
+  position: absolute;
+  margin-top: -15px;
+  background-color: #cacaca;
+  color: black;
+  padding: 2px;
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.techImage {
+
+}
+
+.techImage:hover .textTag{
+  opacity: 1;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -179,21 +199,26 @@ top:0
 @media (max-width: 939px) {
 
   .container {
-    justify-content: center;  /* push both to center */
+    justify-content: center;
+    /* push both to center */
     position: relative;
   }
-  .container > * {
-    position: absolute;       /* overlap them */
+
+  .container>* {
+    position: absolute;
+    /* overlap them */
   }
-  .container > *:first-child {
+
+  .container>*:first-child {
     left: 0;
   }
-  .container > *:last-child {
+
+  .container>*:last-child {
     right: 0;
   }
 
   .section {
-    height: 100%  ;
+    height: 100%;
   }
 
   .page {
@@ -238,5 +263,6 @@ top:0
 
 .container {
   display: flex;
-  justify-content: space-between; /* items at edges on wide screens */
+  justify-content: space-between;
+  /* items at edges on wide screens */
 }
