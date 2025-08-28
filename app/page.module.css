@@ -141,11 +141,11 @@ a.secondary {
 }
 
 .cardContainer {
-  top: 0
+  top: 0;
 }
 
 .cardContainer:hover {
-  margin-top: -20
+  margin-top: -20;
 }
 
 .reveal {

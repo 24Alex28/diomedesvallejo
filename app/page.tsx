@@ -23,7 +23,7 @@ export default function Home() {
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%", flex: 1, gap: 35, top: 0, zIndex: 2, backgroundColor: "rgba(0, 0, 0, 0.8)", padding: 10, }}>
           <Image width={60} height={60} src={'/bulb.gif'} alt="bulb light" />
           <h1 style={{ fontSize: 'clamp(30px,20vw,90px)', textAlign: "center", color: "white" }} className={font_1.className}>DO YOU HAVE AN IDEA?</h1>
-          <h3 style={{ fontSize: 20, width: "70%", minWidth: 320, textAlign: "center", fontWeight: "normal" }}>Lets make it happen! my name is <strong style={{ fontWeight: "bold", color: "white" }}>Diomedes Vallejo</strong> and I have been developing people’s dreams and ideas since <strong style={{ fontWeight: "bold", color: "white" }}>2020</strong>.</h3>
+          <h2 style={{ fontSize: 20, width: "70%", minWidth: 320, textAlign: "center", fontWeight: "normal" }}>Lets make it happen! my name is <strong style={{ fontWeight: "bold", color: "white" }}>Diomedes Vallejo</strong> and I have been developing people’s dreams and ideas since <strong style={{ fontWeight: "bold", color: "white" }}>2020</strong>.</h2>
           <h3 style={{ fontSize: 20, width: "70%", minWidth: 320, textAlign: "center" }}>Whether you are <strong style={{ fontWeight: "bold", color: "white" }}>starting</strong> your project or want to <strong style={{ fontWeight: "bold", color: "white" }}>level up</strong>. Im here to take it where it has to be taken.</h3>
           <Contact />
         </div>
