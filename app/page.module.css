@@ -141,7 +141,7 @@ a.secondary {
 }
 
 .cardContainer {
-  top: 0;
+  margin-top: 0;
 }
 
 .cardContainer:hover {
