@@ -39,7 +39,8 @@ export const techStack = {
     Html: { name: 'HTML', photo: '/html.png' },
     Css: { name: 'CSS', photo: '/css.png' },
     JavaScript: { name: "Java script", photo: '/js.png' },
-    Vercel:{name:'Vercel', photo:'/vercel.svg'}
+    Vercel: { name: 'Vercel', photo: '/vercel.svg' },
+    Appscripts: { name: 'Google Apps scripts', photo: '/appscripts.png' }
 }
 
 export const aboutMe: aboutMe[] = [{
@@ -60,7 +61,7 @@ export const projects: project[] = [
     {
         companyPhoto: '/Milett.png',
         title: 'Milett Nourishing Nature',
-        description: `An Ecommerce/Blog web application that allows users to purchase an learn more abot Milett's products and services.`,
+        description: `An Ecommerce/Blog web application that allows users to purchase and learn more about Milett's products and services.`,
         projectLink: 'https://milett.vercel.app/',
         stack: [techStack.Nextjs, techStack.Firebase, techStack.Neon, techStack.Postgres, techStack.Gemini].map(({ name, photo }: { name: string, photo: string }) => { return { icon: <Image style={{ textAlign: "center", alignSelf: "center", justifySelf: "center" }} width={30} height={30} src={photo} alt={name} />, name } })
     },
@@ -68,7 +69,7 @@ export const projects: project[] = [
     {
         companyPhoto: '/claro.png',
         title: 'Prepaid Bounces | Claro DR',
-        description: `A transactional web app capabble of handling more than 7M transactions per month.`,
+        description: `A transactional web app capable of handling more than 7M transactions per month.`,
         stack: [techStack.Spring, techStack.React, techStack.Oracle, techStack.Openshift, techStack.Nexus, techStack.Gitlab, techStack.Jenkins].map(({ name, photo }: { name: string, photo: string }) => { return { icon: <Image style={{ textAlign: "center", alignSelf: "center", justifySelf: "center" }} width={30} height={30} src={photo} alt={name} />, name } })
     },
     {
@@ -80,8 +81,8 @@ export const projects: project[] = [
     {
         companyPhoto: '/ISFODOSU.gif',
         title: 'FEM Transportation | ISFODOSU',
-        description: 'A web/mobile application for handing the transportation, allowing the live tracking of the buses and the students.',
-        stack: [techStack.Nexus, techStack.Firebase, techStack.Neon, techStack.Postgres].map(({ name, photo }: { name: string, photo: string }) => { return { icon: <Image style={{ textAlign: "center", alignSelf: "center", justifySelf: "center" }} width={30} height={30} src={photo} alt={name} />, name } })
+        description: 'A web/mobile application for handing the transportation, allowing the live tracking of buses and the students.',
+        stack: [techStack.Nexus, techStack.Firebase, techStack.Neon, techStack.Postgres, techStack.Appscripts].map(({ name, photo }: { name: string, photo: string }) => { return { icon: <Image style={{ textAlign: "center", alignSelf: "center", justifySelf: "center" }} width={30} height={30} src={photo} alt={name} />, name } })
     },
 
     {
@@ -128,16 +129,16 @@ export const challenges: challenge[] = [
     {
         companyPhoto: '/Milett.png',
         companyName: 'Milett Nourishing Nature',
-        challenge: 'The design: The website had to be modern, and AI had to be integrated for customer service, always visible.',
+        challenge: 'The design: The website had to be modern and SEO friendly, and AI had to be integrated for customer service, always visible.',
         solution: `I made the hero section move to the background when the user scrolls down, and return to the front when the user scrolls up. 
         There is a floating button for AI assistance. The site is fast, easy to use, and provides a great user experience.`,
-        result: 'A smooth, fast, and easy-to-use web application with AI integration for customer service and sales.'
+        result: 'A smooth, fast, and easy-to-use web application with 100 points in SEO on Google lighthouse and AI integration for customer service and sales.'
     },
 
     {
         companyPhoto: '/claro.png',
         companyName: 'Claro | Prepaid Bounces',
-        challenge: 'I had to catch all the transactions made by nine microservices and process them in a fast and reliable way.',
+        challenge: 'To catch all the transactions made by nine microservices and process them in a fast and reliable way.',
         solution: `I added triggers to the database that catch each transaction made by the microservices and send them to two well indexed tables, organizing them into categories.`,
         result: 'We are able to handle more than 7M transactions per month. The app runs fast, and when there is a bounce, we can send it back to its corresponding microservice to be reprocessed.'
     },
